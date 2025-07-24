@@ -1,0 +1,26 @@
+Python virtual environment
+venv/
+venv-py311/
+*.venv
+
+Python cache files
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+IDE and OS specific files
+.vscode/
+.idea/
+.DS_Store
+
+Large data and output folders
+These should not be tracked by Git. Add a note to your README
+explaining the required directory structure.
+input_videos/
+output_frames/
+
+Ultralytics settings and logs
+.ultralytics/
+yolov8s.pt
+yolov8m.pt
