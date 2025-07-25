@@ -11,7 +11,7 @@
 
 # --- IMPORTANT: MODEL SETUP ---
 # The 'ultralytics' library handles everything for you. The first time you run
-# this script, it will automatically download the 'yolov8m.pt' model file.
+# this script, it will automatically download the 'yolov8l.pt' model file.
 # -----------------------------
 
 import cv2
@@ -29,13 +29,13 @@ CONFIG = {
     "OUTPUT_DIR": "output_frames_yolo",
 
     # BATCH_SIZE: How many frames to process on the GPU at once.
-    # Higher values are faster but use more GPU memory. 16 or 32 is a good start.
-    "BATCH_SIZE": 16,
+    # Lowered to 8 to accommodate the larger YOLOv8l model on GPUs with less VRAM.
+    "BATCH_SIZE": 8,
     
     # FRAME_SKIP: How many frames to skip between analyses. 
     # A value of 0 means every frame is analyzed (highest quality).
     # A value of 1 processes every 2nd frame, etc.
-    "FRAME_SKIP": 0,
+    "FRAME_SKIP": 1,
 
     # Confidence Threshold:
     # Only detections with a confidence score higher than this value will be considered.
@@ -44,7 +44,7 @@ CONFIG = {
     # Stability Frame Count:
     # An object is considered "stable" if it has been detected away from the edges
     # for this many consecutive frames.
-    "STABILITY_FRAMES": 5,
+    "STABILITY_FRAMES": 4,
 
     # Event Cooldown:
     # How many frames a group must be absent before its "event" is considered over.
@@ -326,9 +326,9 @@ def analyze_video_yolo(video_path, output_dir, config):
     """
     Analyzes the video using a two-stage, batch-processing approach for speed and accuracy.
     """
-    print("Loading YOLOv8m model via Ultralytics...")
+    print("Loading YOLOv8l model via Ultralytics...")
     try:
-        model = YOLO('yolov8m.pt') # Upgraded model for better accuracy
+        model = YOLO('yolov8l.pt') # Upgraded model for better accuracy
         print("YOLO model loaded successfully.")
     except Exception as e:
         print(f"ERROR: Failed to load YOLO model: {e}")
