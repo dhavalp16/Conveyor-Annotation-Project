@@ -1,4 +1,11 @@
+# This file lists the required packages for the project.
+# The --extra-index-url line ensures that the correct GPU-enabled versions of torch, torchvision, and torchaudio are installed from the PyTorch repository.
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+torch
+torchvision
+torchaudio
 ultralytics
-opencv-python
-scikit-image
 numpy
+opencv-python

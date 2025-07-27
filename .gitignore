@@ -1,26 +1,24 @@
-Python virtual environment
+# Python virtual environment
 venv/
-venv-py311/
 *.venv
+__pycache__/
 
-Python cache files
-pycache/
+# Python cache files
 *.pyc
 *.pyo
 *.pyd
 
-IDE and OS specific files
+# Input and Output data folders
+/input_videos/
+/final_frames_dataset/
+
+# YOLO model files
+*.pt
+
+# IDE and OS specific files
 .vscode/
 .idea/
 .DS_Store
 
-Large data and output folders
-These should not be tracked by Git. Add a note to your README
-explaining the required directory structure.
-input_videos/
-output_frames/
-
-Ultralytics settings and logs
+# Ultralytics settings
 .ultralytics/
-yolov8s.pt
-yolov8m.pt
