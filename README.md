@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project was developed to streamline the process of creating image datasets for object annotation. During an internship, the primary task was to annotate objects for machine learning models. To capture objects in all possible orientations, they were recorded on a moving conveyor belt from five different angles (top, front, back, left, and right).
+This project was developed to streamline the process of creating image datasets for object annotation. To capture objects in all possible orientations for machine learning models, they were recorded on a moving conveyor belt from five different angles (top, front, back, left, and right).
 
-This script automates the most tedious part of the process: extracting high-quality, relevant frames from these video files. It uses a sophisticated two-stage AI pipeline to intelligently identify the best "hero" shots of objects, preparing a clean and comprehensive dataset ready for annotation software like AnyLabeling.
+This script automates the process of extracting relevant frames from video files. It uses a two-stage AI pipeline to identify the best shots of objects, preparing a dataset that is ready for annotation software like AnyLabeling.
 
 ## Key Features
 
