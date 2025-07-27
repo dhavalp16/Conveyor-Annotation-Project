@@ -18,7 +18,7 @@ This script automates the process of extracting relevant frames from video files
 
 * **Burst Frame Separation:** Optionally saves the frames immediately before and after the hero shot into a separate `burst_frames` subfolder for additional context without cluttering the main dataset.
 
-* **Customizable Naming Conventions:** Choose between simple sequential numbering (e.g., `top_view_fmcg_0.jpg`, perfect for annotation software) or descriptive filenames for easier debugging.
+* **Customizable Naming Conventions:** Choose between simple sequential numbering (e.g., `top_view_bottles_0.jpg`, perfect for annotation software) or descriptive filenames for easier debugging.
 
 * **Interactive ROI Selection:** A user-friendly GUI allows you to draw the precise area of the conveyor belt to analyze for each video.
 
@@ -54,11 +54,11 @@ Before running, make sure your project has the following folder structure. The `
 CONVEYOR_ANNOTATION_PROJECT/
 |
 |-- input_videos/
-|   |-- top_view_fmcg.mp4
-|   |-- front_view_fmcg.mp4
-|   |-- back_view_fmcg.mp4
-|   |-- side_left_view_fmcg.mp4
-|   |-- side_right_view_fmcg.mp4
+|   |-- top_view_bottles.mp4
+|   |-- front_view_bottles.mp4
+|   |-- back_view_bottles.mp4
+|   |-- side_left_view_bottles.mp4
+|   |-- side_right_view_bottles.mp4
 |   |-- ... (other categories)
 |
 |-- .gitignore
@@ -115,15 +115,15 @@ The script will save the processed frames in the `final_frames_dataset` director
 ```
 final_frames_dataset/
 |
-|-- fmcg/
+|-- bottles/
 |   |
-|   |-- top_view_fmcg/
-|   |   |-- top_view_fmcg_0.jpg
-|   |   |-- top_view_fmcg_1.jpg
+|   |-- top_view_bottles/
+|   |   |-- top_view_bottles_0.jpg
+|   |   |-- top_view_bottles_1.jpg
 |   |   |-- burst_frames/
-|   |       |-- top_view_fmcg_0_0.jpg
-|   |       |-- top_view_fmcg_0_1.jpg
+|   |       |-- top_view_bottles_0_0.jpg
+|   |       |-- top_view_bottles_0_1.jpg
 |   |
-|   |-- front_view_fmcg/
-|       |-- front_view_fmcg_2.jpg
+|   |-- front_view_bottles/
+|       |-- front_view_bottles_2.jpg
 |       |-- ...
