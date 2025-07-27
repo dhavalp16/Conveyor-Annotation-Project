@@ -68,7 +68,7 @@ CONFIG = {
     # High-quality model for tracking and scoring. Runs only on frames that contain objects.
     "TRACKER_MODEL": 'yolov8x.pt',
     # How many frames with objects to process on the GPU at once. Adjust based on VRAM.
-    "BATCH_SIZE": 32,
+    "BATCH_SIZE": 16,
 
     # --- Detection & Scoring Logic ---
     # Confidence threshold for the high-quality TRACKER_MODEL. Detections below this are ignored.
