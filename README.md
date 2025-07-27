@@ -68,7 +68,7 @@ CONVEYOR_ANNOTATION_PROJECT/
 
 ## How to Use
 
-1. **Place Videos:** Add your video files to the `input_videos` folder. Ensure they follow the naming convention: `angle_category.mp4` (e.g., `top_view_biscuit.mp4`).
+1. **Place Videos:** Add your video files to the `input_videos` folder. Ensure they follow the naming convention: `angle_category.mp4` (e.g., `top_view_bottles.mp4`).
 
 2. **Configure `app.py`:** Open `app.py` and adjust the settings in the `CONFIG` dictionary at the top of the file to match your needs.
 
