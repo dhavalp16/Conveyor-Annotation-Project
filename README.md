@@ -27,8 +27,8 @@ This script automates the process of extracting relevant frames from video files
 1. **Clone the Repository:**
 
    ```bash
-   git clone [https://github.com/dhavalp16/Conveyor-Annotation-Project.git](https://github.com/dhavalp16/Conveyor-Annotation-Project.git)
-   cd Conveyor-Annotation-Project
+   git clone https://github.com/dhavalp16/Conveyor-Belt-Frame-Extractor.git
+   cd Conveyor-Belt-Frame-Extractor
    ```
 
 2. **Create a Python Virtual Environment:**
